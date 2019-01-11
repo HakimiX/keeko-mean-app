@@ -1,0 +1,35 @@
+<div class="container">
+<div class="row align-wrapper">
+    <div class="col m4 offset-s3 valign">
+      <div class="card grey darken-4 z-depth-5">
+        <div class="card-content white-text">
+          <div class="row">
+            <div class="col s11">
+              <form (submit)="onLoginSubmit()">
+                <div class="row">
+                  <div class="input-field inline col s12">
+                    <input id="username" type="text" name="username" [(ngModel)]="username" required>
+                    <label for="username">Username</label>
+                    <span class="helper-text" data-error="required"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field inline col s12">
+                    <input id="password" type="password" name="password" [(ngModel)]="password" required>
+                    <label for="password">Password</label>
+                    <span class="helper-text" data-error="required"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <button class="btn btn-custom right waves-effect waves-light" type="submit">Login</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
